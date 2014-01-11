@@ -1,12 +1,13 @@
 // For more information on how to configure a task runner, please visit:
 // https://github.com/gulpjs/gulp
 
-var gulp   = require('gulp'),
-    clean  = require('gulp-clean'),
-    concat = require('gulp-concat'),
-    rename = require('gulp-rename'),
-    uglify = require('gulp-uglify'),
-    less   = require('gulp-less');
+var gulp   = require('gulp');
+var clean  = require('gulp-clean');
+var concat = require('gulp-concat');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
+var less   = require('gulp-less');
+var es     = require('event-stream');
 
 gulp.task('clean', function() {
     // Clear the destination folder
@@ -16,8 +17,14 @@ gulp.task('clean', function() {
 
 gulp.task('copy', function () {
     // Copy app and vendor files into the destination folder
-    return gulp.src(['src/**', '!src/less/**', '!src/js/**', 'src/js/vendor/**'])
-        .pipe(gulp.dest('dist'));
+    return es.concat(
+        gulp.src(['src/img/**'])
+            .pipe(gulp.dest('dist/img')),
+        gulp.src(['src/js/vendor/**'])
+            .pipe(gulp.dest('dist/js/vendor')),
+        gulp.src(['src/*.*'])
+            .pipe(gulp.dest('dist'))
+    );
 });
 
 gulp.task('scripts', function () {
