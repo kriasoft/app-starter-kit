@@ -20,6 +20,7 @@
 * Remove IE conditional classes
   ([#1187](https://github.com/h5bp/html5-boilerplate/issues/1187),
    [#1290](https://github.com/h5bp/html5-boilerplate/issues/1290)).
+* Move source files into the `src` folder
 
 ### 4.3.0 (September 10, 2013)
 

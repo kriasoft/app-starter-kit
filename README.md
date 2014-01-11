@@ -1,28 +1,24 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# Web App Boilerplate
 
-HTML5 Boilerplate is a professional front-end template for building fast,
-robust, and adaptable web apps or sites.
-
-This project is the product of many years of iterative development and combined
-community knowledge. It does not impose a specific development philosophy or
-framework, so you're free to architect your code in the way that you want.
-
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Homepage: [http://html5boilerplate.com](http://html5boilerplate.com)
-* Twitter: [@h5bp](http://twitter.com/h5bp)
+A front-end web application template based on [HTML5 Boilerplate](http://html5boilerplate.com) and enhanced with [LESS](http://www.lesscss.org/) and [Gulp.js](http://gulpjs.com/) task runner.
 
 
 ## Quick start
 
-Choose one of the following options:
+Clone the git repo:
 
-1. Download the latest stable release from
-   [html5boilerplate.com](http://html5boilerplate.com/) or a custom build from
-   [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the [tagged
-   release](https://github.com/h5bp/html5-boilerplate/releases) you'd like to
-   use.
+```bash
+git clone -o base https://github.com/KriaSoft/Web-App-Boilerplate.git MyApp
+cd MyApp
+```
+
+And when you need to pull and merge the latest changes into your project, run:
+
+```bash
+git checkout master
+git fetch base
+git mege base/master
+```
 
 
 ## Features
@@ -45,10 +41,8 @@ Choose one of the following options:
 * Cross-domain Ajax and Flash.
 * "Delete-key friendly." Easy to strip out parts you don't need.
 * Extensive inline and accompanying documentation.
+* LESS-based style sheets
 
-[HTML5 Boilerplate v4 provides legacy browser
-support](https://github.com/h5bp/html5-boilerplate/tree/v4) (IE 6+, Firefox
-3.6+, Safari 4+), but is no longer actively developed.
 
 ## Documentation
 
@@ -60,5 +54,4 @@ want to write about your project.
 
 ## Contributing
 
-Anyone and everyone is welcome to [contribute](CONTRIBUTING.md). Hundreds of
-developers have helped make the HTML5 Boilerplate what it is today.
+Anyone and everyone is welcome to [contribute](CONTRIBUTING.md).
