@@ -1,0 +1,13 @@
+{
+  "name": "web-app-boilerplate",
+  "description": "A front-end web application template based on the HTML5 Boilerplate.",
+  "repository": "https://github.com/KriaSoft/Web-App-Boilerplate",
+  "devDependencies": {
+    "gulp": "~3.3.0",
+    "gulp-clean": "~0.2.2",
+    "gulp-concat": "~2.1.7",
+    "gulp-rename": "~0.2.1",
+    "gulp-uglify": "~0.1.0",
+    "gulp-less": "~1.1.6"
+  }
+}
