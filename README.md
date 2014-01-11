@@ -10,6 +10,14 @@ Clone the git repo:
 ```bash
 git clone -o base https://github.com/KriaSoft/Web-App-Boilerplate.git MyApp
 cd MyApp
+npm install # installs dev tools listed in the package.json file
+```
+
+Start a task runner to watch for modifications in source files and compile
+modified files in the background:
+
+```bash
+gulp
 ```
 
 And when you need to pull and merge the latest changes into your project, run:

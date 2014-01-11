@@ -9,12 +9,13 @@ var gulp   = require('gulp'),
     less   = require('gulp-less');
 
 gulp.task('clean', function() {
-    gulp.src('src/dist/**/*.*', { read: false })
+    // Clear the destination folder
+    gulp.src('dist/**/*.*', { read: false })
         .pipe(clean());
 });
 
 gulp.task('copy', function () {
-    // Copy vendor scripts
+    // Copy app and vendor files into the destination folder
     return gulp.src(['src/**', '!src/less/**', '!src/js/**', 'src/js/vendor/**'])
         .pipe(gulp.dest('dist'));
 });
@@ -28,6 +29,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('styles', function () {
+    // Compile LESS files
     return gulp.src('src/less/app.less')
         .pipe(less())
         .pipe(rename('app.css'))
