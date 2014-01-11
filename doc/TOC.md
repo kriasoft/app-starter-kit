@@ -31,5 +31,3 @@ of your site/app in various production environments.
 
 * [Server configs](https://github.com/h5bp/server-configs) — Configs for
   different servers.
-* [Ant build script](https://github.com/h5bp/ant-build-script) — The original
-  HTML5 Boilerplate build script.
