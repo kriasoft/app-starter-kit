@@ -25,7 +25,7 @@ And when you need to pull and merge the latest changes into your project, run:
 ```bash
 git checkout master
 git fetch base
-git mege base/master
+git merge base/master
 ```
 
 
