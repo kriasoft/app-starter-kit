@@ -16,7 +16,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('copy', function () {
-    // Copy app and vendor files into the destination folder
+    // Copy all application files except *.less and .js into the `dist` folder
     return es.concat(
         gulp.src(['src/img/**'])
             .pipe(gulp.dest('dist/img')),
