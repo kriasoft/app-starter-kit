@@ -1,6 +1,8 @@
 # Web App Boilerplate
 
-A front-end web application template based on [HTML5 Boilerplate](http://html5boilerplate.com) and enhanced with [LESS](http://www.lesscss.org/) and [Gulp.js](http://gulpjs.com/) task runner.
+A front-end web application template based on [HTML5 Boilerplate](http://html5boilerplate.com)
+and extended with [LESS](http://www.lesscss.org/) style sheets and [Gulp.js](http://gulpjs.com/)
+task runner.
 
 
 ## Quick start
