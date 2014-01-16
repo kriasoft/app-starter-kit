@@ -11,8 +11,9 @@ Clone the git repo:
 
 ```bash
 git clone -o base https://github.com/KriaSoft/Web-App-Boilerplate.git MyApp
-cd MyApp
-npm install # installs dev tools listed in the package.json file
+cd .\MyApp          # change the current directory to your project directory
+npm install -g gulp # install gulp task runner globally, if you don't have it installed already
+npm install         # install dev tools listed in the package.json file
 ```
 
 Start a task runner to watch for modifications in source files and compile
