@@ -3,6 +3,8 @@
   "description": "A front-end web application template based on the HTML5 Boilerplate.",
   "repository": "https://github.com/KriaSoft/Web-App-Boilerplate",
   "devDependencies": {
+    "gulp-livereload": "~0.2.0",
+    "tiny-lr": "0.0.5",
     "gulp": "~3.3.4",
     "gulp-clean": "~0.2.2",
     "gulp-concat": "~2.1.7",
@@ -10,6 +12,9 @@
     "gulp-uglify": "~0.1.0",
     "gulp-less": "~1.1.6",
     "event-stream": "~3.1.0",
-    "gulp-csso": "~0.1.7"
+    "gulp-csso": "~0.1.7",
+    "gulp-embedlr": "~0.5.2",
+    "express": "~3.4.8",
+    "gulp-util": "~2.2.12"
   }
 }
