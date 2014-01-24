@@ -7,6 +7,7 @@ var concat = require('gulp-concat');
 var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var less   = require('gulp-less');
+var csso   = require('gulp-csso');
 var es     = require('event-stream');
 
 gulp.task('clean', function() {
@@ -40,6 +41,7 @@ gulp.task('styles', function () {
     return gulp.src('src/less/app.less')
         .pipe(less())
         .pipe(rename('app.css'))
+        .pipe(csso())
         .pipe(gulp.dest('dist/css'));
 });
 
