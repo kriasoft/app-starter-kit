@@ -1,0 +1,14 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+build
+node_modules
+npm-debug.log
+yarn-error.log
+docker-compose.override.yml
+
+# Editors and IDEs
+.vscode/*
+!.vscode/snippets
+!.vscode/launch.json
+!.vscode/settings.json
