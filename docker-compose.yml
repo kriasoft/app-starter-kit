@@ -10,7 +10,7 @@ services:
   web:
     build:
       context: ./web/
-      dockerfile: /home/gideon/app-starter-kit/web/Dockerfile
+      dockerfile: Dockerfile
     networks: 
       - web
       - backend
@@ -32,7 +32,7 @@ services:
   api:
     build:
       context: ./api/
-      dockerfile: /home/gideon/app-starter-kit/api/Dockerfile
+      dockerfile: Dockerfile
     networks: 
       - backend
     hostname: api

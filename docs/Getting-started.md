@@ -4,7 +4,7 @@ ASK is a merger of two projects: [React Starter Kit](https://github.com/kriasoft
 
 It's suggested to get to know both projects before starting with this.
 
-A basic knowledge of Docker, Docker-compose, and Docker volumes is a great asset when working with ASK.
+A basic knowledge of Docker, Docker-compose and Docker volumes are a great asset when working with ASK.
 
 ## Requirements
 
@@ -32,7 +32,6 @@ Recommended and useful plugins for VS Code:
 - Project Snippets
 - Docker
 
-
 ___
 
 ## Instructions
@@ -43,9 +42,9 @@ ___
 1. Run `cd ./web && yarn install && yarn build --release && cd ..`
 1. Run `docker-compose up` in project root
 
-When the images are built and running, two URLs should become available:
+When the images are built and running, two urls should become available:
 
-- Web: [http://localhost:3000/](http://localhost:3000/) 
+- Web: [http://localhost:3000/](http://localhost:3000/)
 - API: [http://localhost:8080/graphql](http://localhost:8080/graphql)
 
 ___
@@ -79,7 +78,7 @@ git merge app-starter-kit/master
 
 - Dockerfiles:
   - Main: `docker-compose.yml`
-  - Web: `web/Dockerfile` 
+  - Web: `web/Dockerfile`
   - API: `/api/Dockerfile.dev` or `/api/Dockerfile`
 - API environment variables: `api/.env`
 
