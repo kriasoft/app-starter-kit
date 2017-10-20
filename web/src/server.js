@@ -68,7 +68,7 @@ app.use((err, req, res, next) => {
   next(err);
 });
 
-app.use(passport.initialize());
+// app.use(passport.initialize());
 
 if (__DEV__) {
   app.enable('trust proxy');
@@ -189,13 +189,13 @@ app.use((err, req, res, next) => {
 //
 // Launch the server
 // -----------------------------------------------------------------------------
-const promise = models.sync().catch(err => console.error(err.stack));
+
+// const promise = models.sync().catch(err => console.error(err.stack));
+
 if (!module.hot) {
-  promise.then(() => {
     app.listen(config.port, () => {
       console.info(`The server is running at http://localhost:${config.port}/`);
     });
-  });
 }
 
 //
